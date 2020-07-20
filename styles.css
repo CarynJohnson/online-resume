@@ -1,5 +1,5 @@
 body {
-    background-image: url('Photos/background-grunge.jpg');
+    /* background-image: url('Photos/background-grunge.jpg'); */
     background-color: #fda766;
     color: #E0DFDF;
     font-family: 'Didact Gothic', sans-serif;
@@ -8,6 +8,7 @@ body {
 
 .container {
     padding-bottom: 35px;
+    padding-top: 30px;
     position: static;
 }
 
