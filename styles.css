@@ -649,7 +649,6 @@ body {
 
 /* SMALL DEVICES AND SHIT  */
 @media (min-width: 768px) and (max-width: 991px) {
- 
 
     .caryn {   
         top: 42px;
@@ -890,28 +889,35 @@ body {
 /* EXTRA SMALL MEDIA QUERY  */
 
 @media (max-width: 767px) {
-    
+    #resume-header {
+        font-size: 3em;
+        padding-top: 0px;
+    }
+    #resume-header2 {
+        font-size: 1em;
+    }
    #resume-white-box {
         background-color: lightgray;
-        height: 6190px;
-        padding-left: 59px;
+        height: 5170px;
+        padding-left: 10px;
         padding-right: 10px;
         border: 1px solid lightgray;
         border-radius: 10px;
         width: 100%;
+        padding-top: 10px;
         padding-bottom: 50px;
 
     }
     
     .caryn {   
-        top: 140px;
-        left: 192px;  
+        top: 170px;
+        left: 120px;  
         transform: rotate(45deg);
         -webkit-transform: rotate(45deg); 
     }
     .education {
-        top: 137px;
-        left: 315px;
+        top: 136px;
+        left: 195px;
         transform: rotate(45deg);
         -webkit-transform: rotate(45deg);
     }
@@ -924,57 +930,61 @@ body {
     }
     .employment {
         top: -24px;
-        left: 182px;
+        left: 110px;
         transform: rotate(225deg);
         -webkit-transform: rotate(225deg); 
     }
     .techskills {
-        top: -25px;
-        left: 270px;
+        top: -24px;
+        left: 30px;
         transform: rotate(225deg);
         -webkit-transform: rotate(225deg);
     }
     .credits {
-        top: 139px;
+        top: 122px;
         left: 28px;
         transform: rotate(45deg);
         -webkit-transform: rotate(45deg);
     }
     .certifications {
         top: -24px;
-        left: 120px;
+        left: 180px;
         transform: rotate(-135deg);
         -webkit-transform: rotate(-135deg);
     }
     .covid {
         top: 335px;
-        left: 309px;
+        left: 69px;
         font-size: .8em;
         transform: rotate(45deg);
         -webkit-transform: rotate(45deg);
 
     }
     #caryn-johnson {
-        margin-left: px;
+        margin-left: 4px;
         margin-top: 30px;
-        font-size: 8em;
+        font-size: 5.2em;
+    }
+    #caryn-johnson :nth-child(2) {
+        margin-top: -28px;
+
     }
     #caryn-johnson :nth-child(3) {
-        font-size: .673em;
-        letter-spacing: .002em;
+        font-size: .65em;
+        letter-spacing: 0.0021em;
         margin-top: -30px;
-        margin-left: 0px;
+        margin-left: 3px;
     } 
     #caryn-johnson :nth-child(4) {
         font-size: 0.20em;
-        letter-spacing: .3em;
-        margin-top: -58px;
-        margin-left: 0px;
+        letter-spacing: .23em;
+        margin-top: -48px;
+        margin-left: 12px;
     }
     #education {
-        font-size: 5.3em;
+        font-size: 3.3em;
         margin-top: 40px;
-        margin-left: 0px;
+        margin-left: 6px;
         padding: 0px;
         line-height: .3em;
         padding-top: 20px;
@@ -984,7 +994,7 @@ body {
         line-height: 1em;
         padding-top: 22px;
         font-size: .86em;
-        margin-top: 0px;
+        margin-top: -5px;
         margin-left: 0px;
         position: absolute;
         
@@ -996,12 +1006,12 @@ body {
         margin-bottom: 0px;
         padding-bottom: 0px;
         margin-left: 0px;
-        margin-top: 120px;
+        margin-top: 68px;
         position: absolute;
     }
     #techskills {
-        font-size: 5.25em;
-        margin-top: -1695px;
+        font-size: 3.25em;
+        margin-top: -1395px;
         padding: 0px;
         line-height: .8em;
         text-emphasis: bold;
@@ -1013,23 +1023,23 @@ body {
     }
     #techskills :nth-child(3) {
         font-size: 1.35em;
-        margin-top: 1790px;
+        margin-top: 1510px;
         margin-left: 0px;
         position: absolute;
     }
     #certifications {
-        font-size: 3.5em;
-        margin-top: 150px;
+        font-size: 2.2em;
+        margin-top: 110px;
         position: relative;
-        margin-left: 20px;
+        margin-left: 12px;
     }
     
     #certifications :nth-child(2) {
         font-size: 1.29em;
     }
     #covid-compliance {
-        font-size: 4.54em;
-        margin-top: 4180px;
+        font-size: 2.7em;
+        margin-top: 3550px;
         position: absolute;
         margin-left: 0px;
         line-height: .8em;
@@ -1041,11 +1051,11 @@ body {
         font-size: .8em;
     }
     #socials {
-        font-size: 4.65em;
-        margin-top: 4550px;
+        font-size: 1.65em;
+        margin-top: 3850px;
         position: absolute;
-        margin-left: -115px;
-        font-size: 6.6em;
+        margin-left: -110px;
+        font-size: 3.8em;
     }
     #socials p {
         border: solid 2px #003366;
@@ -1054,31 +1064,37 @@ body {
         border-radius: 0px;
         border-width: 100%;
     }
+
+    #socials .glyphicon {
+        margin-left: 200px;
+        margin-top: -20px;
+    }
     #contact-list {
-        margin-top: 4570px;
+        margin-top: 3800px;
         position: absolute;
-        margin-left: -20px;
-        font-size: 1.46em;
+        margin-left: -10px;
+        font-size: 1em;
     }
     #contact-list .glyphicon{
         font-size: 1.3em;
+  
     }
     #bubble-caryn {
         padding-top: 20px;
         padding-bottom: 20px;
-        height: 162px;
-        width: 438px;
+        height: 100%;
+        width: 100%;
         vertical-align: middle;
-        font-size: 1.1em;
+
     }
  
     #bubble-about {
         margin-bottom: 30px;
         text-align: left;
         margin-top: 1px;
-        font-size: 1.3em;
+        font-size: 1em;
         margin-left: 0px;
-        width: 438px;    
+        width: 100%   
     }
 
     #bubble-about ul {
@@ -1095,34 +1111,34 @@ body {
         margin-top: 0px;
         margin-bottom: 0px;
         text-align: left;
-        width: 438px;
-        font-size: 1.2em;
+        width: 100%;
+        font-size: 1em;
     }
     #bubble-education p {
         line-height: .9;
     }
     
     #bubble-employment-history {
-        margin-top: 240px;
+        margin-top: 165px;
         text-align: left;
         padding-left: 30px;
         margin-left: 0px;
-        width: 438px;
-        font-size: 1.15em;
+        width: 100%;
+        font-size: 1em;
     }
     #bubble-employment-history p {
         line-height: 1.2;
     }
     
     #bubble-techskills {
-        margin-top: 220px;
+        margin-top: 170px;
         text-align: left;
         line-height: 1.9em;
         padding-top: 21px;
         padding-bottom: 21px;
         margin-left: 0px;
-        width: 438px;
-        font-size: 1.2em;
+        width: 100%;
+        font-size: 1em;
     }
     
     #bubble-credits {
@@ -1131,8 +1147,8 @@ body {
         padding-top: 40px;
         text-align: left;
         padding-left: 40px;
-        width: 438px;
-        font-size: 1.2em;
+        width: 100%;
+        font-size: 1em;
     }
 
     
@@ -1143,8 +1159,8 @@ body {
         padding-left: 30px;
         padding-top: 30px;
         padding-bottom: 30px;
-        width: 438px;
-        font-size: 1.2em;
+        width: 100%;
+        font-size: 1em;
     
     }
     #bubble-covid {
@@ -1155,8 +1171,8 @@ body {
         padding-right: 30px;
         padding-top: 30px;
         padding-bottom: 30px;
-        width: 438px;
-        font-size: 1.2em;
+        width: 100%;
+        font-size: 1em;
     }
     #socials p {
         border-radius: 4px;
