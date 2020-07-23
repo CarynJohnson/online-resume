@@ -1,365 +1,345 @@
 body {
     background-image: url(Photos/background-grunge.jpg);
     background-repeat: repeat;
-    background-color: #fda766;
+    background-position: center;
     color: #E0DFDF;
     font-family: 'Didact Gothic', sans-serif;
-    font-size: 16px;
+    font-size: 16px;  
 }
 
-.container {
-    padding-bottom: 85px;
-    padding-top: 30px;
-    position: static;
-}
-
-#resume-header {
-    font-size: 4em;
-}
-
-#resume-header2 {
-    margin-bottom: 22px;
-    margin-top: -15px;
-    font-size: 1.2em;
-}
-
-#resume-white-box {
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(24, 1fr);
+    grid-template-rows: repeat(43, 33px);
+    column-gap: none;
+    row-gap: .5em;
     background-color: lightgray;
-    height: auto;
-    padding-left: 35px;
-    padding-right: 0px;
-    border: 1px solid lightgray;
-    border-radius: 10px;
-
-}
-
-#resume-body-line1 {
-    padding: 0px;
-    margin: 0px;
-}
-
-#resume-body-line3 {
-    padding: 0px;
-    margin: 0px;
-}
-
-.speech-bubble {
-    float: left;
-    border-radius: 15px;
-    width: 90%;
-    text-align: center;
     color: #E0DFDF;
+    vertical-align: middle;
     padding: 20px;
-    position: relative;
-    text-align: center;
-    vertical-align: center;
-    margin: 0px;
-    height: 100%;
-}
-/* ARROW/CARROTS FOR BUBBLES */
-.arrow {
-    border: solid white;
-    border-width: 0 29px 29px 0px;
-    display: inline-block;
-    padding: 9px;
-    position: absolute;
-}
-.right {
-    transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
-    left: 287px;
-}
-.left {
-    transform: rotate(135deg);
-    -webkit-transform: rotate(135deg);
-    left: -20px;
-}
-.caryn {   
-    top: 42px;
-    border-color:  #663300;    
-}
-.education {
-    top: 40px;
-    border-color: #ff6600;
-}
-.about {
-    top: 160px;
-    border-color: #b32400;
-}
-.employment {
-    top: 90px;
-    border-color: #ff8c1a;
-}
-.techskills {
-    border-color: #1390A9;
-    top: 120px;
-}
-.credits {
-    border-color: darkorchid;
-    top: 55px;
-}
-.certifications {
-    border-color: purple;
-    top: 15px;
-}
-.covid {
-    border-color: #003300;
-    top: 262px;
-    font-size: .8em;
-}
+    margin-top: 20px;
 
-
-
-/* Category words */
-
-.resume-words {
-    float: left;
-    border-radius: 5px;
-    width: 90%;
-    text-align: justify;
-    font-size: medium;
-    margin-bottom: 0px;
-    margin-top: 0px;
-    line-height: .9em;
-    word-spacing: 0px;    
 }
-
-#caryn-johnson {
-    float: left;
-    color: #663300;
-    font-size: 5.9em;
-    letter-spacing: .1em;
-    height: 100%;
-    margin-top: 10px;
-}
-#caryn-johnson :nth-child(2) {
-    font-size: .73em;
-    letter-spacing: 0em;
-    margin-top: -32px;
-}
-
-#caryn-johnson :nth-child(3) {
-    color: #b32400;
-    font-size: .67em;
-    letter-spacing: .001em;
-    margin-top: -10px;
-
-} 
-#caryn-johnson :nth-child(4) {
-    font-size: 0.2em;
-    letter-spacing: .3em;
-    color: #b32400;
-    margin-top: -60px;
-}
-
-#education {
-    font-size: 3.9em;
-    margin-top: -40px;
-    padding: 0px;
-    line-height: .3em;
-    text-emphasis: bold;
-    color: #ff6600;
-    padding-top: 20px;
-}
-
-#education :nth-child(2) {
-    color: #ff8c1a;
-    line-height: 1em;
-    padding-top: 22px;
-    font-size: .86em;
-    margin-top: 24px;
-}
-
-#education :nth-child(3) {
-    color: #ff8c1a;
-    padding-top: 12px;
-    font-size: 1.32em;
-    margin-bottom: 0px;
-    padding-bottom: 0px;
-}
-
-#techskills {
-    color: #1390A9;
-    font-size: 4.1em;
-    margin-top: -106px;
-    padding: 0px;
-    line-height: .8em;
-    text-emphasis: bold;
-}
-
-#techskills :nth-child(2) {
-    font-size: 1.65em;
-    margin-top: 14px;
-}
-
-#techskills :nth-child(3) {
+#text-credits a:link {
     color: darkorchid;
-    font-size: 1.31em;
-    margin-top: 67px;
+    text-decoration: none;
+}
+#text-credits a:visited {
+    color: darkorchid;
+    text-decoration: none;
+}
+#text-credits a:hover {
+    color: darkorchid;
+    text-decoration: none;
+}
+#text-credits a:active {
+    color: darkorchid;
+    text-decoration: none;
+}
+.glyphicon {
+    font-size: 5.5em;
+}
+#glyphicon-caryn-small {
+    display: none;
+} 
+#glyphicon-about-small {
+    display: none;
+} 
+#glyphicon-education-small {
+    display: none;
+} 
+#glyphicon-employment-small {
+    display: none;
+} 
+#glyphicon-techskills-small {
+    display: none;
+} 
+#glyphicon-contact-small {
+    display: none;
+} 
+#glyphicon-credits-small {
+    display: none;
+} 
+#glyphicon-certifications-small {
+    display: none;
+} 
+#glyphicon-covid-small {
+    display: none;
+} 
+
+.bubble {
+    grid-column: span 12;
+    border-radius: 10px;
+    padding: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+
 }
 
-#certifications {
-    font-size: 2.73em;
-    margin-top: 20px;
-    color: purple;
-    position: relative;
+.text-cats {
+    grid-column: span 12;
+    padding: 1px;
+    margin: 0px;
+    line-height: 1em;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 2.2em;
 }
 
-#certifications :nth-child(2) {
-    font-size: 1.267em;
-}
-#covid-compliance {
-    font-size: 3.2em;
-    margin-top: 20px;
-    margin-left: -15px;
-    color: #003300;
-    line-height: .8em;
-}
-#covid-compliance :nth-child(1){
-    font-size: 1.15em;
-}
-#covid-compliance :nth-child(3){
-    font-size: .8em;
-}
-#socials {
-    color: #003366;
-    font-size: 4.65em;
-    margin-top: 22px;
-}
 
-/* Bubbles */
 
 #bubble-caryn {
-    background-color: #663300;
-    clear: both;
-    margin-bottom: 0px;
-    text-align: left;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    margin-top: 20px;
-}
-
+    grid-column: 1/8;
+    grid-row: 1/6;
+    padding-top: 25px;
+    background-color: #663300;    
+} 
 #bubble-about {
+    grid-column: 17/25;
+    grid-row: 1/8;
     background-color: #b32400;
-    margin-bottom: 30px;
-    text-align: left;
-    margin-top: -1px;
-    font-size: .98em;
+    line-height: 1.5em;
+    padding-top: 30px;
 }
-
-#bubble-about ul {
-    text-align: left;
-    list-style-type: none;
-    padding-left: 12px;
-    margin: 0;
-    font-size: .92em;
-    padding-top: 10px;
-    padding-bottom: 10px;    
-}
-   
 #bubble-education {
+    grid-column: 1/8;
+    grid-row: 6/10;
     background-color: #ff6600;
-    margin-top: -68px;
-    margin-bottom: 0px;
-    text-align: left;
+    line-height: 1em;
 }
-
-#bubble-education p {
-    line-height: .9;
+#bubble-employment {
+    grid-column: 17/25;
+    grid-row: 8/16;
+    background-color:  #ff8c1a;
 }
-
-#bubble-employment-history {
-    background-color: #ff8c1a;
-    margin-top: 0px;
-    text-align: left;
-    padding-left: 30px;
-}
-
-#bubble-employment-history p {
-    line-height: 1.2;
-}
-
 #bubble-techskills {
+    grid-column: 1/8;
+    grid-row: 10/44;
     background-color: #1390A9;
-    margin-top: -179px;
-    text-align: left;
-    line-height: 2em;
-    padding-top: 21px;
-    padding-bottom: 21px;
-    font-size: 1.065em;
+    font-size: 1.1em;
+    line-height: 2.1em;
+    padding-top: 35px;
+}
+#bubble-techskills span {
+    font-size: 1em;
 }
 
 #bubble-credits {
+    grid-column: 17/25;
+    grid-row: 16/20;
     background-color: darkorchid;
-    margin-top: 28px;
-    padding: 25px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    text-align: left;
-    padding-left: 30px;
+    position: relative;
+    padding-top: 43px;
 }
-
 #bubble-credits a {
-    color: #E0DFDF;
-    text-decoration: underline;
+    color: white;
 }
-
 #bubble-certifications {
+    grid-column: 17/25;
+    grid-row: 20/37;
     background-color: purple;
-    margin-top: 30px;
-    text-align: left;
-    padding-left: 30px;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 40px;
+    font-size: 1.05em;
+    
 }
-
 #bubble-covid {
+    grid-column:17/25;
+    grid-row: 37/44;
     background-color: #003300;
-    margin-top: 26px;
-    text-align: left;
-    padding-left: 30px;
-    padding-right: 20px;
-    font-size: 1.1em;
+    font-size: 1.05em;
+    padding-top: 50px;
 }
-
-#socials p {
-    border: solid 2px #003366;
-    margin-bottom: 0px;
-    padding-bottom: 8px;
-    border-radius: 4px;
-}
-
-#socials span {
-    margin-top: 189px;
-    margin-left:100px;
-    padding: 0px;
-    position: absolute;
-    font-size: 1.5em;
-}
-
-#contact-list {
+#bubble-contact {
+    grid-column: 9/16;
+    grid-row: 26/41;
     text-align: center;
-    justify-content: center;
-    align-items: center;
-    vertical-align: center; 
-    line-height: 1.3em;
-    font-size: 1.5em;
-    margin-top: 52px;
+    font-size: 1.4em;
 }
-
-#contact-list .glyphicon {
-    font-size: 1.2em;
+#bubble-contact .glyphicon {
+    font-size: 1.4em;
 }
 
 
+#text-caryn {
+    grid-column: 9/16;
+    grid-row: 1/5;
+    color: #663300;
+    font-size: 4.4em;
+    margin-top: 5px;   
+}
+#text-caryn :nth-child(1){
+    font-size: 1.445em;
+}
+#text-about {
+    grid-column: 9/16;
+    grid-row: 5/7; 
+    color: #b32400;
+    font-size: 4.1em;
+}
+#text-about :nth-child(2) {
+    font-size: .46em;
+    line-height: 0em;
+}
+#text-education {
+    grid-column: 9/16;
+    grid-row: 8/10;
+    color: #ff6600;
+    font-size: 3.8em;
+}
+#text-employment {
+    grid-column: 9/16;
+    grid-row: 10/13;
+    color: #ff8c1a;
+    font-size: 3.1em;
+}
+#text-employment :nth-child(2){
+    font-size: 1.62em;
+}
+#text-techskills {
+    grid-column: 9/16;
+    grid-row: 13/17;
+    color: #1390A9;
+    font-size: 3.8em;
+    margin-top: 13px;
+}
+#text-techskills :nth-child(2) {
+    font-size: 1.7em;
+}
+#text-credits {
+    grid-column: 9/16;
+    grid-row: 17/19;
+    color: darkorchid;
+    font-size: 5.1em;
+    position: relative;
+    top: 10px;
+}
+#text-certifications {
+    grid-column: 9/16;
+    grid-row: 19/22;
+    color: purple;
+    font-size: 2.7em;
+    position: relative;
+    top: 35px;
 
+}
+#text-certifications :nth-child(2) {
+    font-size: 1.25em;
+}
+#text-contact {
+    grid-column: 9/16;
+    grid-row: 23/25;
+    color: #003366;
+    font-size: 4em;
+    border: 4px solid #003366;
+    border-radius: 5px;
+    padding-top: 5px;
+}
+#glyphicon-contact {
+    grid-column: 9/16;
+    grid-row: 25;
+}
+#glyphicon-contact span {
+    grid-column: 12;
+    color: #003366;
+    position: relative;
+    left: 110px;
+    top: -28px;
+}
+#text-covid {
+    grid-column: 9/16;
+    grid-row: 40/44;
+    color: #003300;
+    font-size: 3.3em;
+}
+#text-covid :nth-child(1) {
+    font-size: 1.16em;
+}
+#text-covid :nth-child(3) {
+    font-size: .82em;
+}
+#glyphicon-caryn {
+    grid-column: 8;
+    grid-row: 1/5;
+}
+#glyphicon-caryn span {
+    color: #663300;
+    position: relative;
+    top: 35px;
+    left: -26px;
+}
+#glyphicon-about {
+    grid-column: 16;
+    grid-row: 5/7;
+}
+#glyphicon-about span {
+    color: #b32400;
+    position: relative;
+    top: 0px;
+    left: 26px;
+}
 
+#glyphicon-education {
+    grid-column: 8;
+    grid-row: 8/10;
+}
+#glyphicon-education span {
+    color: #ff6600;
+    position: relative;
+    top: -10px;
+    left: -26px;
+}
 
+#glyphicon-employment {
+    grid-column: 16;
+    grid-row: 10/13;
+}
+#glyphicon-employment span {
+    color: #ff8c1a;
+    position: relative;
+    top: 10px;
+    left: 26px;
+}
 
-
-
-
-
+#glyphicon-techskills {
+    grid-column: 8;
+    grid-row: 13/17;
+}
+#glyphicon-techskills span {
+    color: #1390A9;
+    position: relative;
+    top: 40px;
+    left: -26px;
+}
+#glyphicon-credits {
+    grid-column: 16;
+    grid-row: 17/19;
+}
+#glyphicon-credits span {
+    color: darkorchid;
+    position: relative;
+    top: 5px;
+    left: 26px;
+}
+#glyphicon-certifications {
+    grid-column: 16;
+    grid-row: 19/22;
+}
+#glyphicon-certifications span {
+    color: purple;
+    position: relative;
+    top: 40px;
+    left: 26px;
+}
+#glyphicon-covid {
+    grid-column: 16;
+    grid-row: 41/44;
+}
+#glyphicon-covid span {
+    color: #003300;
+    position: relative;
+    top: 10px;
+    left: 26px;
+}
 
 
 
@@ -379,815 +359,793 @@ body {
 
 
 /* MEDIUM SIZED DEVICES MEDIUM SIZED DEVICES MEDIA QUERY MEDIUM MEDIUM TWO BUBBLES */
-@media (min-width: 992px) and (max-width: 1199px) {
-    #resume-white-box {
-        padding-left: 85px;
-        padding-right:60px;
+@media (min-width: 992px) and (max-width: 1199px){
+.wrapper {
+    margin-left: 20px;
+    margin-right: 20px;
+    grid-template-rows: repeat(64, 33px);
+
+}    
+    #bubble-caryn {
+        grid-column: 2/13;
+        grid-row: 1/5; 
+        padding-top: 25px;  
+    } 
+    #glyphicon-caryn {
+        grid-column: 13;
+        grid-row: 1/5;
+        position: relative;
+        left: 3px;
+    }
+    #text-caryn {
+        grid-column: 14/24;
+        grid-row: 1/5;
+    }
+    #bubble-about {
+        grid-column: 14/24;
+        grid-row: 5/12;
+        padding-top: 30px;
+    }
+    #text-about {
+        grid-column: 2/13;
+        grid-row: 5/7; 
+    }
+    #glyphicon-about {
+        grid-column: 13;
+        grid-row: 5;
+    }
+    #text-education {
+        grid-column: 2/13;
+        grid-row: 8/10;
+        position: relative;
+        top: -20px;
+    }
+    #bubble-education {
+        grid-column: 2/13;
+        grid-row: 10/14;
+        position: relative;
+        top: -10px;
+    }
+    #glyphicon-education {
+        grid-column: 8;
+        grid-row: 8/10;
+    }
+    #glyphicon-education span {
+        position: relative;
+        top: 15px;
+        left: -30px;
+        transform: rotate(-90deg);
+        -webkit-transform: rotate(-90deg);
+    }
+    #text-employment {
+        grid-column: 1/13;
+        grid-row: 14/17;
+    }
+    #bubble-employment {
+        grid-column: 14/24;
+        grid-row: 12/20;
+    }
+    #bubble-techskills {
+        grid-column: 2/13;
+        grid-row: 17/53;
+        line-height: 2.3em;
         padding-top: 20px;
+        font-size: 1.1em;
     }
-    .caryn {   
-        top: 42px;
-        left: 320px;   
+
+    #text-techskills {
+        grid-column: 14/24;
+        grid-row: 20/24;
     }
-    .education {
-        top: -24px;
-        left: 142px;
-        transform: rotate(-135deg);
-        -webkit-transform: rotate(-135deg);
+
+    #glyphicon-techskills {
+        grid-column: 13;
+        grid-row: 21;
     }
-    .about {
-        top: 58px;
-        left: -25px;
-    
+    #glyphicon-techskills span {
+        position: relative;
+        top: 0px;
+        left: -23px;
     }
-    .employment {
-        top: 130px;
-        left: -25px;
+    #text-credits {
+        grid-column: 14/24;
+        grid-row: 24;
     }
-    .techskills {
-        top: 120px;
-        left: 320px;
+    #bubble-credits {
+        grid-column: 14/24;
+        grid-row: 27/30;
+        position: relative;
+        padding-top: 25px;
     }
-    .credits {
-        top: -23px;
-        left: 140px;
-        transform: rotate(-135deg);
-        -webkit-transform: rotate(-135deg);
+    #glyphicon-credits {
+        grid-column: 17;
+        grid-row: 26;
     }
-    .certifications {
-        top: -24px;
-        left: 140px;
-        transform: rotate(-135deg);
-        -webkit-transform: rotate(-135deg);
+    #glyphicon-credits span {
+        top: -10px;
+        left: 40px;
+        transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
     }
-    .covid {
-        top: -23px;
-        left: 139px;
+    #text-certifications {
+        grid-column: 14/24;
+        grid-row: 30/33;
+        position: relative;
+        top: 0px;
+    }
+    #glyphicon-certifications {
+        grid-column: 17;
+        grid-row: 32;
+    }
+    #glyphicon-certifications span {
+        position: relative;
+        top: -10px;
+        left: 40px;
+        transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+    }
+    #bubble-certifications {
+        grid-column: 14/24;
+        grid-row: 33/51;
+        font-size: 1.3em;
+        padding-top: 60px;
+        padding-bottom: 0px;
+        font-size: 1.05em; 
+    }
+    #text-contact {
+        grid-column: 14/24;
+        grid-row: 51/53;
+    }
+    #glyphicon-contact {
+        grid-column: 17;
+        grid-row: 53;
+    }
+    #glyphicon-contact span {
+        left: 45px;
+    }
+    #bubble-contact {
+        grid-column: 14/24;
+        grid-row: 53/59;
+        position: relative;
+        top: 40px;
         font-size: .8em;
-        transform: rotate(224deg);
-        -webkit-transform: rotate(224deg);
+    }
+    #text-covid {
+        grid-column: 2/13;
+        grid-row: 53/56;
+    }
+    #glyphicon-covid {
+        grid-column: 8;
+        grid-row: 57;
+        transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+    }
+    #glyphicon-covid span {
+        position: relative;
+        left: 8px;
+        top: 10px;
+    }
+    #bubble-covid {
+        grid-column: 2/13;
+        grid-row: 58/64;
+        font-size: 1.1em;
+        padding-top: 25px;
+        position: relative;
+        top: 0px;
+    }  
+    #glyphicon-employment {
+        grid-column: 13;
+        grid-row: 14;
+    }
+    #glyphicon-employment span {
+        top: 10px;
+        left: 23px;
+    }
+    #bubble-contact .glyphicon {
+        font-size: 2.3em;
+    }
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* SMALL DEVICES  */
+@media (min-width: 768px) and (max-width: 991px){
+       .wrapper {
+        grid-template-rows: repeat(61, 33px);
+        font-size: 90%;
+    }    
+        #bubble-caryn {
+            grid-column: 2/13;
+            grid-row: 1/5; 
+            padding-top: 20px;  
+        } 
+        #glyphicon-caryn {
+            grid-column: 13;
+            grid-row: 1/5;
+            position: relative;
+            left: 3px;
+        }
+        #text-caryn {
+            grid-column: 14/24;
+            grid-row: 1/5;
+        }
+        #bubble-about {
+            grid-column: 14/24;
+            grid-row: 5/12;
+            padding-top: 25px;
+        }
+        #text-about {
+            grid-column: 2/13;
+            grid-row: 5/7; 
+        }
+        #glyphicon-about {
+            grid-column: 13;
+            grid-row: 5;
+        }
+        #text-education {
+            grid-column: 2/13;
+            grid-row: 8/10;
+            position: relative;
+            top: -20px;
+        }
+        #bubble-education {
+            grid-column: 2/13;
+            grid-row: 10/14;
+            position: relative;
+            top: -15px;
+            padding-top: 25px;
+        }
+        #glyphicon-education {
+            grid-column: 8;
+            grid-row: 8/10;
+        }
+        #glyphicon-education span {
+            position: relative;
+            top: 15px;
+            left: -30px;
+            transform: rotate(-90deg);
+            -webkit-transform: rotate(-90deg);
+        }
+        #text-employment {
+            grid-column: 1/13;
+            grid-row: 14/17;
+        }
+        #bubble-employment {
+            grid-column: 14/24;
+            grid-row: 12/20;
+            padding-top: 30px;
+        }
+        #bubble-techskills {
+            grid-column: 2/13;
+            grid-row: 17/50;
+            line-height: 2.3em;
+            padding-top: 20px;
+            font-size: 1.1em;
+        }
+    
+        #text-techskills {
+            grid-column: 14/24;
+            grid-row: 20/24;
+        }
+    
+        #glyphicon-techskills {
+            grid-column: 13;
+            grid-row: 21;
+        }
+        #glyphicon-techskills span {
+            position: relative;
+            top: 0px;
+            left: -23px;
+        }
+        #text-credits {
+            grid-column: 14/24;
+            grid-row: 24;
+        }
+        #bubble-credits {
+            grid-column: 14/24;
+            grid-row: 27/30;
+            position: relative;
+            padding-top: 25px;
+        }
+        #glyphicon-credits {
+            grid-column: 17;
+            grid-row: 26;
+        }
+        #glyphicon-credits span {
+            top: -10px;
+            left: 30px;
+            transform: rotate(90deg);
+            -webkit-transform: rotate(90deg);
+        }
+        #text-certifications {
+            grid-column: 14/24;
+            grid-row: 30/33;
+            position: relative;
+            top: 0px;
+        }
+        #glyphicon-certifications {
+            grid-column: 17;
+            grid-row: 32;
+        }
+        #glyphicon-certifications span {
+            position: relative;
+            top: -10px;
+            left: 30px;
+            transform: rotate(90deg);
+            -webkit-transform: rotate(90deg);
+        }
+        #bubble-certifications {
+            grid-column: 14/24;
+            grid-row: 33/48;
+            font-size: 1.3em;
+            padding-top: 40px;
+            padding-bottom: 0px;
+            font-size: 1.05em; 
+        }
+        #text-contact {
+            grid-column: 14/24;
+            grid-row: 48/50;
+        }
+        #glyphicon-contact {
+            grid-column: 17;
+            grid-row: 50;
+        }
+        #glyphicon-contact span {
+            left:35px;
+            top: -26px;
+        }
+        #bubble-contact {
+            grid-column: 14/24;
+            grid-row: 50/57;
+            position: relative;
+            top: 23px;
+            font-size: 1.1em;
+        }
+        #text-covid {
+            grid-column: 2/13;
+            grid-row: 50/54;
+        }
+        #glyphicon-covid {
+            grid-column: 8;
+            grid-row: 54;
+            transform: rotate(90deg);
+            -webkit-transform: rotate(90deg);
+        }
+        #glyphicon-covid span {
+            position: relative;
+            left: 0px;
+            top: 10px;
+        }
+        #bubble-covid {
+            grid-column: 2/13;
+            grid-row: 55/62;
+            font-size: 1.1em;
+            padding-top: 35px;
+            position: relative;
+            top: -10px;
+        }  
+        #glyphicon-employment {
+            grid-column: 13;
+            grid-row: 14;
+        }
+        #glyphicon-employment span {
+            top: 10px;
+            left: 23px;
+        }
+        #bubble-contact .glyphicon {
+            font-size: 2.3em;
+        }
+    
+    
+     
+}  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* EXTRA SMALL MEDIA QUERY */
+@media (max-width: 767px) {
+
+    body {
+        background-image: none;
+        background-color: lightgray;
+    }
+    #resume-container {
+        background-color: lightgray;
+ 
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        align-items: center;
 
     }
-    #caryn-johnson {
-  
-        margin-left: 36px;
+    /* .wrapper {
+        grid-template-rows: repeat(93, 33px);
+
+} */
+#glyphicon-caryn {
+    display: none;
+} 
+#glyphicon-about {
+    display: none;
+} 
+#glyphicon-education {
+    display: none;
+} 
+#glyphicon-employment {
+    display: none;
+} 
+#glyphicon-techskills {
+    display: none;
+} 
+#glyphicon-contact {
+    display: none;
+} 
+#glyphicon-credits {
+    display: none;
+} 
+#glyphicon-certifications {
+    display: none;
+} 
+#glyphicon-covid {
+    display: none;
+} 
+    #bubble-caryn {
+        grid-row: 1/6;
+        grid-column: 1/25;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        width: 100%; 
     }
-    #caryn-johnson :nth-child(3) {
-        font-size: .642em;
-        letter-spacing: .001em;
-        margin-top: 45px;
-        margin-left: -414px;
-    } 
-    #caryn-johnson :nth-child(4) {
-        font-size: 0.19em;
-        letter-spacing: .3em;
-        margin-top: -60px;
-        margin-left: -413px;
-    }
-    #education {
-        font-size: 3.6em;
-        margin-top: -160px;
-        margin-left: -381px;
-        padding: 0px;
-        line-height: .3em;
-        padding-top: 20px;
-    }
-    
-    #education :nth-child(2) {
-        line-height: 1em;
-        padding-top: 22px;
-        font-size: .86em;
-        margin-top: 200px;
-        margin-left: 0px;
-        position: absolute;
-        
-    
-    }
-    #education :nth-child(3) {
-        padding-top: 12px;
-        font-size: 1.32em;
-        margin-bottom: 0px;
-        padding-bottom: 0px;
-        margin-left: 0px;
-        margin-top: 280px;
-        position: absolute;
-    }
-    #techskills {
-        font-size: 3.85em;
-        margin-top: 26px;
-        padding: 0px;
-        line-height: .8em;
-        text-emphasis: bold;
-        margin-left: 26px;
-    }
-    #techskills :nth-child(2) {
-        font-size: 1.65em;
-        margin-top: 14px;
-    }
-    #techskills :nth-child(3) {
-        font-size: 1.32em;
-        margin-top: 45px;
-        margin-left: 0px;
-    }
-    #certifications {
-        font-size: 2.6em;
-        margin-top: 20px;
-        margin-left: 26px;
+    #text-caryn {
+        grid-row: 7/10;
+        grid-column: 1/25;
+        font-size: 360%;
+        width: 100%;
         position: relative;
+        top: 10px;
     }
-    
-    #certifications :nth-child(2) {
-        font-size: 1.29em;
+    #glyphicon-caryn-small {
+        display: inline-flex;
+        color: #663300;
+        grid-row: 5;
+        grid-column: 1/25;
+        font-size: 1.5em;        
+    } 
+    #glyphicon-caryn-small span {
+        position: relative;
+        top: 0px;
+        left: 50%;
+        transform: translateX(-50%);
     }
-    #covid-compliance {
-        font-size: 3.2em;
-        margin-top: 745px;
-        position: absolute;
-        margin-left: -393px;
-        line-height: .8em;
+    #text-about {
+        grid-row: 10/11;
+        grid-column: 1/25;
+        font-size: 340%;
+        position: relative;
+        top: 0px; 
+        width: 100%;
     }
-    #covid-compliance :nth-child(1){
-        font-size: 1.15em;
+    #glyphicon-about-small {
+        display: inline-flex;
+        color:  #b32400;
+        grid-row: 11;
+        grid-column: 1/25;
+        font-size: 1.5em;
+    } 
+    #glyphicon-about-small span {
+        position: relative;
+        left: 35%;
+        transform: translateX(-65%);
     }
-    #covid-compliance :nth-child(3){
-        font-size: .8em;
+
+    #bubble-about {
+        grid-row: 13/21;
+        grid-column: 1/25;
+        padding-top: 35px;
+        display: flex;
+        width: 100%;
+        text-align: left;
+        align-items: center;    
     }
-    #socials {
-        font-size: 4.65em;
-        margin-top: 980px;
-        position: absolute;
-        margin-left: -15px;
+    #bubble-education {
+        grid-row: 21/25;
+        grid-column: 1/25;
+        position: relative;
+        top: 0px;
+        width: 100%;
+        text-align: left; 
+        align-items: center;
+    }
+    #glyphicon-education-small {
+        display: inline-flex;
+        color: #ff6600;
+        grid-row: 24;
+        grid-column: 1/25;
+        font-size: 1.5em;
+ 
+    } 
+    #glyphicon-education-small span {
+        position: relative;
+        left: 65%;
+        transform: translateX(-35%);
+        top: -8px;
+    }
+    #text-education {
+        grid-row: 26;
+        grid-column: 1/25;
+        width: 100%;
+        font-size: 320%;
+    }
+    #text-employment {
+        grid-row: 27/28;
+        grid-column: 1/25;
+        width: 100%; 
+        font-size: 255%;
+        position: relative;
+        top: 18px;
+    }
+    #glyphicon-employment-small {
+        display: inline-flex;
+        color: #ff8c1a;
+        grid-row: 29;
+        grid-column: 1/25;
+        font-size: 1.5em;
+        width: 100%;
+    } 
+    #glyphicon-employment-small span {
+        position: relative;
+        left: 37%;
+        transform: translateX(-63%);
+    }
+    #bubble-employment {
+        grid-row: 31/39;
+        grid-column: 1/25;
+        width: 100%;
+        text-align: left;
+        vertical-align: middle;       
+    }
+    #text-techskills {
+        grid-row: 39/42;
+        grid-column: 1/25;
+        width: 100%;
+        font-size: 307%;
+    }
+    #glyphicon-techskills-small {
+        display: inline-flex;
+        color: #1390a9;
+        grid-row: 42;
+        grid-column: 1/25;
+        font-size: 1.5em;
+        width: 100%;
+    } 
+    #glyphicon-techskills-small span {
+        position: relative;
+        top: -20px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    #bubble-techskills {
+        grid-row: 43/82;
+        grid-column: 1/25;
+        width: 100%;
+        position: relative;
+        top: 10px;
+        text-align: left;
+        align-items: center;
+    }
+    #bubble-credits {
+        grid-row: 83/85;   
+        grid-column: 1/25;
+        width: 100%;
+        position: relative;
+        top: 7px;
+    }
+    #glyphicon-credits-small {
+        display: inline-flex;
+        color: darkorchid;
+        grid-row: 85;
+        font-size: 1.5em;
+        grid-column: 1/25;
+        width: 100%; 
+
+    } 
+    #glyphicon-credits-small span {
+        position: relative;
+        top: -40px;
+        left: 37%;
+        transform: translateX(-63%);
+    }
+    #text-credits {
+        grid-row: 85;
+        grid-column: 1/25;
+        width: 100%;
+        font-size: 430%;
+        position: relative;
+        top: 60px;
         text-align: center;
     }
-    #socials .glyphicon {
-        margin-left: -55px;
-    }
-    #contact-list {
-        margin-top: 950px;
-        position: absolute;
-        margin-left: -14px;
-        font-size: 1.06em;
-    }
-    #contact-list .glyphicon{
-        font-size: 1.6em;
-
-    }
-    #bubble-caryn {
-        padding-top: 20px;
-        padding-bottom: 20px;
-
-    }
-    #bubble-about {
-        margin-bottom: 30px;
-        text-align: left;
-        margin-top: -160px;
-        font-size: .98em;
-        margin-left: 430px;    
-    }
-
-    #bubble-about ul {
-        text-align: left;
-        list-style-type: none;
-        padding-left: 12px;
-        margin: 0;
-        font-size: .92em;
-        padding-top: 10px;
-        padding-bottom: 10px;    
-    }
-       
-    #bubble-education {
-        margin-top: -70px;
-        margin-bottom: 0px;
-        text-align: left;
-    }
-    #bubble-education p {
-        line-height: .9;
-    }
-    
-    #bubble-employment-history {
-        margin-top: 0px;
-        text-align: left;
-        padding-left: 30px;
-        margin-left: 17px;
-    }
-    #bubble-employment-history p {
-        line-height: 1.2;
-    }
-    
-    #bubble-techskills {
-        margin-top: -50px;
-        text-align: left;
-        line-height: 1.9em;
-        padding-top: 21px;
-        padding-bottom: 21px;
-        margin-left: 0px;
-    }
-    
-    #bubble-credits {
-        margin-top: 50px;
-        margin-left: 6px;
-        padding-top: 40px;
-        text-align: left;
-        padding-left: 40px;
-    }
-
-    
-    #bubble-certifications {
-        margin-top: 40px;
-        margin-left: 4px;
-        text-align: left;
-        padding-left: 30px;
-        padding-top: 30px;
-        padding-bottom: 30px;
-    
-    }
-    #bubble-covid {
-        margin-top: 927px;
-        margin-left: -755px;
-        text-align: left;
-        padding-left: 30px;
-        padding-right: 30px;
-        padding-top: 30px;
-        padding-bottom: 30px;
-    }
-    #socials p {
-        margin-bottom: 0px;
-        padding-bottom: 8px;
-        border-radius: 4px;
-        margin-top: -171px;
-        padding-right: 0px;
-    }
-    
-    #socials span {
-        margin-top: -122px;
-        margin-left:100px;
-        padding: 0px;
-        position: absolute;
-        font-size: 1.5em;
-    }
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* SMALL DEVICES AND SHIT  */
-@media (min-width: 768px) and (max-width: 991px) {
-
-    .caryn {   
-        top: 42px;
-        left: 268px;   
-    }
-    .education {
-        top: -24px;
-        left: 115px;
-        transform: rotate(-135deg);
-        -webkit-transform: rotate(-135deg);
-    }
-    .about {
-        top: 58px;
-        left: -24px;
-    
-    }
-    .employment {
-        top: 90px;
-        left: -24px;
-    }
-    .techskills {
-        top: 160px;
-        left: 270px;
-    }
-    .credits {
-        top: -23px;
-        left: 120px;
-        transform: rotate(-135deg);
-        -webkit-transform: rotate(-135deg);
-    }
-    .certifications {
-        top: -24px;
-        left: 120px;
-        transform: rotate(-135deg);
-        -webkit-transform: rotate(-135deg);
-    }
-    .covid {
-        top: -23px;
-        left: 119px;
-        font-size: .8em;
-        transform: rotate(224deg);
-        -webkit-transform: rotate(224deg);
-
-    }
-    #caryn-johnson :nth-child(3) {
-        font-size: .642em;
-        letter-spacing: .001em;
-        margin-top: 50px;
-        margin-left: -355px;
-    } 
-    #caryn-johnson :nth-child(4) {
-        font-size: 0.19em;
-        letter-spacing: .3em;
-        margin-top: -60px;
-        margin-left: -355px;
-    }
-    #education {
-        font-size: 3.6em;
-        margin-top: -200px;
-        margin-left: -360px;
-        padding: 0px;
-        line-height: .3em;
-        padding-top: 20px;
-    }
-    
-    #education :nth-child(2) {
-        line-height: 1em;
-        padding-top: 22px;
-        font-size: .86em;
-        margin-top: 200px;
-        margin-left: 5px;
-        position: absolute;
-        
-    
-    }
-    #education :nth-child(3) {
-        padding-top: 12px;
-        font-size: 1.32em;
-        margin-bottom: 0px;
-        padding-bottom: 0px;
-        margin-left: 5px;
-        margin-top: 280px;
-        position: absolute;
-    }
-    #techskills {
-        font-size: 3.85em;
-        margin-top: 26px;
-        padding: 0px;
-        line-height: .8em;
-        text-emphasis: bold;
-        margin-left: 0px;
-    }
-    #techskills :nth-child(2) {
-        font-size: 1.65em;
-        margin-top: 14px;
-    }
-    #techskills :nth-child(3) {
-        font-size: 1.28em;
-        margin-top: 45px;
-        margin-left: 0px;
-    }
-    #certifications {
-        font-size: 2.6em;
-        margin-top: 20px;
-        position: relative;
-    }
-    
-    #certifications :nth-child(2) {
-        font-size: 1.245em;
-    }
-    #covid-compliance {
-        font-size: 3.2em;
-        margin-top: 710px;
-        position: absolute;
-        margin-left: -375px;
-        line-height: .8em;
-    }
-    #covid-compliance :nth-child(1){
-        font-size: 1.15em;
-    }
-    #covid-compliance :nth-child(3){
-        font-size: .8em;
-    }
-    #socials {
-        font-size: 4.65em;
-        margin-top: 980px;
-        position: absolute;
-        margin-left: -10px;
-    }
-    #contact-list {
-        margin-top: 950px;
-        position: absolute;
-        margin-left: -14px;
-        font-size: 1.06em;
-    }
-    #contact-list .glyphicon{
-        font-size: 1.6em;
-    }
-    #bubble-caryn {
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
-    #bubble-about {
-        margin-bottom: 30px;
-        text-align: left;
-        margin-top: -160px;
-        font-size: .98em;
-        margin-left: 370px;    
-    }
-
-    #bubble-about ul {
-        text-align: left;
-        list-style-type: none;
-        padding-left: 12px;
-        margin: 0;
-        font-size: .92em;
-        padding-top: 10px;
-        padding-bottom: 10px;    
-    }
-       
-    #bubble-education {
-        margin-top: -110px;
-        margin-bottom: 0px;
-        text-align: left;
-    }
-    #bubble-education p {
-        line-height: .9;
-    }
-    
-    #bubble-employment-history {
-        margin-top: 0px;
-        text-align: left;
-        padding-left: 30px;
-        margin-left: 17px;
-    }
-    #bubble-employment-history p {
-        line-height: 1.2;
-    }
-    
-    #bubble-techskills {
-        margin-top: -100px;
-        text-align: left;
-        line-height: 1.9em;
-        padding-top: 21px;
-        padding-bottom: 21px;
-        margin-left: 0px;
-    }
-    
-    #bubble-credits {
-        margin-top: 50px;
-        margin-left: 6px;
-        padding-top: 40px;
-        text-align: left;
-        padding-left: 40px;
-    }
-
-    
-    #bubble-certifications {
-        margin-top: 40px;
-        margin-left: 4px;
-        text-align: left;
-        padding-left: 30px;
-        padding-top: 30px;
-        padding-bottom: 30px;
-    
-    }
-    #bubble-covid {
-        margin-top: 897px;
-        margin-left: -650px;
-        text-align: left;
-        padding-left: 30px;
-        padding-right: 30px;
-        padding-top: 30px;
-        padding-bottom: 30px;
-    }
-    #socials p {
-        margin-bottom: 0px;
-        padding-bottom: 8px;
-        border-radius: 4px;
-        margin-top: -171px;
-    }
-    
-    #socials span {
-        margin-top: -122px;
-        margin-left:100px;
-        padding: 0px;
-        position: absolute;
-        font-size: 1.5em;
-    }
-
-}
-
-
-
-
-
-
-/* EXTRA SMALL MEDIA QUERY  */
-
-@media (max-width: 767px) {
-    #resume-header {
-        font-size: 3em;
-        padding-top: 0px;
-    }
-    #resume-header2 {
-        font-size: 1em;
-    }
-   #resume-white-box {
-        background-color: lightgray;
-        height: 5170px;
-        padding-left: 10px;
-        padding-right: 10px;
-        border: 1px solid lightgray;
-        border-radius: 10px;
+    #text-certifications {
+        grid-row: 86;
+        grid-column: 1/25;
         width: 100%;
-        padding-top: 10px;
-        padding-bottom: 50px;
-
+        font-size: 229%;
+        text-align: center;
+        top: 18px;
     }
-    
-    .caryn {   
-        top: 170px;
-        left: 120px;  
-        transform: rotate(45deg);
-        -webkit-transform: rotate(45deg); 
-    }
-    .education {
-        top: 136px;
-        left: 195px;
-        transform: rotate(45deg);
-        -webkit-transform: rotate(45deg);
-    }
-    .about {
-        top: -24px;
-        left: 62px;
-        transform: rotate(225deg);
-        -webkit-transform: rotate(225deg); 
-    
-    }
-    .employment {
-        top: -24px;
-        left: 110px;
-        transform: rotate(225deg);
-        -webkit-transform: rotate(225deg); 
-    }
-    .techskills {
-        top: -24px;
-        left: 30px;
-        transform: rotate(225deg);
-        -webkit-transform: rotate(225deg);
-    }
-    .credits {
-        top: 122px;
-        left: 28px;
-        transform: rotate(45deg);
-        -webkit-transform: rotate(45deg);
-    }
-    .certifications {
-        top: -24px;
-        left: 180px;
-        transform: rotate(-135deg);
-        -webkit-transform: rotate(-135deg);
-    }
-    .covid {
-        top: 335px;
-        left: 69px;
-        font-size: .8em;
-        transform: rotate(45deg);
-        -webkit-transform: rotate(45deg);
-
-    }
-    #caryn-johnson {
-        margin-left: 4px;
-        margin-top: 30px;
-        font-size: 5.2em;
-    }
-    #caryn-johnson :nth-child(2) {
-        margin-top: -28px;
-
-    }
-    #caryn-johnson :nth-child(3) {
-        font-size: .65em;
-        letter-spacing: 0.0021em;
-        margin-top: -30px;
-        margin-left: 3px;
-    } 
-    #caryn-johnson :nth-child(4) {
-        font-size: 0.20em;
-        letter-spacing: .23em;
-        margin-top: -48px;
-        margin-left: 12px;
-    }
-    #education {
-        font-size: 3.3em;
-        margin-top: 40px;
-        margin-left: 6px;
-        padding: 0px;
-        line-height: .3em;
-        padding-top: 20px;
-    }
-    
-    #education :nth-child(2) {
-        line-height: 1em;
-        padding-top: 22px;
-        font-size: .86em;
-        margin-top: -5px;
-        margin-left: 0px;
-        position: absolute;
-        
-    
-    }
-    #education :nth-child(3) {
-        padding-top: 12px;
-        font-size: 1.32em;
-        margin-bottom: 0px;
-        padding-bottom: 0px;
-        margin-left: 0px;
-        margin-top: 68px;
-        position: absolute;
-    }
-    #techskills {
-        font-size: 3.25em;
-        margin-top: -1395px;
-        padding: 0px;
-        line-height: .8em;
-        text-emphasis: bold;
-        margin-left: 10px;
-    }
-    #techskills :nth-child(2) {
-        font-size: 1.65em;
-        margin-top: 14px;
-    }
-    #techskills :nth-child(3) {
-        font-size: 1.35em;
-        margin-top: 1510px;
-        margin-left: 0px;
-        position: absolute;
-    }
-    #certifications {
-        font-size: 2.2em;
-        margin-top: 110px;
-        position: relative;
-        margin-left: 12px;
-    }
-    
-    #certifications :nth-child(2) {
-        font-size: 1.29em;
-    }
-    #covid-compliance {
-        font-size: 2.7em;
-        margin-top: 3550px;
-        position: absolute;
-        margin-left: 0px;
-        line-height: .8em;
-    }
-    #covid-compliance :nth-child(1){
-        font-size: 1.15em;
-    }
-    #covid-compliance :nth-child(3){
-        font-size: .8em;
-    }
-    #socials {
-        font-size: 1.65em;
-        margin-top: 3850px;
-        position: absolute;
-        margin-left: -110px;
-        font-size: 3.8em;
-    }
-    #socials p {
-        border: solid 2px #003366;
-        margin-bottom: 0px;
-        padding-bottom: 8px;
-        border-radius: 0px;
-        border-width: 100%;
-    }
-
-    #socials .glyphicon {
-        margin-left: 200px;
-        margin-top: -20px;
-    }
-    #contact-list {
-        margin-top: 3800px;
-        position: absolute;
-        margin-left: -10px;
-        font-size: 1em;
-    }
-    #contact-list .glyphicon{
-        font-size: 1.3em;
-  
-    }
-    #bubble-caryn {
-        padding-top: 20px;
-        padding-bottom: 20px;
-        height: 100%;
+    #glyphicon-certifications-small {
+        display: inline-flex;
+        color: purple;
+        grid-row: 87;
         width: 100%;
+        grid-column: 1/25; 
+        font-size: 1.5em;
+    } 
+    #glyphicon-certifications-small span {
+        position: relative;
+        left: 66%;
+        transform: translateX(-34%);
+    }
+    #bubble-certifications {
+        grid-row: 88/168;
+        grid-column: 1/25;
+        width: 100%;
+        position: relative;
+        top: -48px; 
+        text-align: left;
+        font-size: .88em;
+        display: inline;
         vertical-align: middle;
-
-    }
- 
-    #bubble-about {
-        margin-bottom: 30px;
-        text-align: left;
-        margin-top: 1px;
-        font-size: 1em;
-        margin-left: 0px;
-        width: 100%   
-    }
-
-    #bubble-about ul {
-        text-align: left;
-        list-style-type: none;
-        padding-left: 12px;
-        margin: 0;
-        font-size: .92em;
-        padding-top: 10px;
-        padding-bottom: 10px;    
-    }
-       
-    #bubble-education {
-        margin-top: 0px;
-        margin-bottom: 0px;
-        text-align: left;
-        width: 100%;
-        font-size: 1em;
-    }
-    #bubble-education p {
-        line-height: .9;
-    }
-    
-    #bubble-employment-history {
-        margin-top: 165px;
-        text-align: left;
-        padding-left: 30px;
-        margin-left: 0px;
-        width: 100%;
-        font-size: 1em;
-    }
-    #bubble-employment-history p {
-        line-height: 1.2;
-    }
-    
-    #bubble-techskills {
-        margin-top: 170px;
-        text-align: left;
-        line-height: 1.9em;
-        padding-top: 21px;
-        padding-bottom: 21px;
-        margin-left: 0px;
-        width: 100%;
-        font-size: 1em;
-    }
-    
-    #bubble-credits {
-        margin-top: 30px;
-        margin-left: 0px;
-        padding-top: 40px;
-        text-align: left;
-        padding-left: 40px;
-        width: 100%;
-        font-size: 1em;
-    }
-
-    
-    #bubble-certifications {
-        margin-top: 40px;
-        margin-left: 4px;
-        text-align: left;
-        padding-left: 30px;
-        padding-top: 30px;
-        padding-bottom: 30px;
-        width: 100%;
-        font-size: 1em;
-    
     }
     #bubble-covid {
-        margin-top: 30px;
-        margin-left: 5px;
-        text-align: left;
-        padding-left: 30px;
-        padding-right: 30px;
-        padding-top: 30px;
-        padding-bottom: 30px;
-        width: 100%;
-        font-size: 1em;
-    }
-    #socials p {
-        border-radius: 4px;
-        margin-top: -171px;
-        margin-left: 119px;
-        border: none;
-    }
-    
-    #socials span {
-        margin-top: -38px;
-        margin-left: 250px;
-        padding: 0px;
+        grid-row: 168/199;
+        width: 100%; 
+        grid-column: 1/25;
         position: relative;
-        font-size: 1.5em;
-        width: 100%;
+        top: -30px;
+        text-align: left;
+        font-size: .88em;
+        display: inline;
+        vertical-align: middle;
+        padding-top: 25px;
     }
+    #glyphicon-covid-small {
+        display: inline-flex;
+        color: #003300;
+        grid-row: 199;
+        width: 100%; 
+        grid-column: 1/25;
+        font-size: 1.5em;
+    } 
+    #glyphicon-covid-small span {
+        position: relative;
+        top: -70px;
+        left: 36%;
+        transform: translateX(-64%);
+    }
+    #text-covid {
+        grid-row: 199;
+        grid-column: 1/25;
+        width: 100%; 
+        font-size: 267%;
+        position: relative;
+        top: 22px;
+    }
+    #text-contact {
+        grid-row: 201/202;
+        grid-column: 1/25;
+        width: 100%;
+        font-size: 380%;
+        position: relative;
+        top: 10px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        padding-right: 0px;
+        padding-left: 0px;
+        border: none;
+
+    }
+    #glyphicon-contact-small {
+        display: inline-flex;
+        color: #003366;
+        grid-row: 202/203;
+        width: 100%;
+        grid-column: 1/25;
+        font-size: 1.5em;
+    } 
+    #glyphicon-contact-small span {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);   
+    }
+    #bubble-contact {
+        grid-row: 203;
+        grid-column: 1/25;
+        width: 100%; 
+        font-size: 120%;
+    }
+    #bubble-contact .glyphicon {
+        font-size: 180%;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+ 
 
 }
