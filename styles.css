@@ -829,6 +829,7 @@ body {
         display: flex;
         align-items: center;
         width: 100%; 
+        font-size: 110%;
     }
     #text-caryn {
         grid-row: 7/10;
@@ -1022,7 +1023,7 @@ body {
     #bubble-certifications {
         grid-row: 88/168;
         grid-column: 1/25;
-        width: 100%;
+        /* width: 100%; */
         position: relative;
         top: -48px; 
         text-align: left;
@@ -1032,7 +1033,7 @@ body {
     }
     #bubble-covid {
         grid-row: 168/199;
-        width: 100%; 
+        /* width: 100%;  */
         grid-column: 1/25;
         position: relative;
         top: -30px;
